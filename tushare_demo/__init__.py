@@ -9,12 +9,12 @@ def get_all_price(STOCK):
     '''''process all stock'''  
     df = ts.get_realtime_quotes(STOCK)  
     df.tail(10)
-    print df
+    print(df)
     
 def get_history_data(STOCK):  
     '''''process all stock'''  
     df = ts.get_hist_data(STOCK)  
-    print df
+    print(df)
     
 def get_history_data_1():
     #df = ts.get_hist_data('600848')
@@ -46,7 +46,7 @@ if __name__ == '__main__':
              '000895',       ##双汇发展  
              '000792']       ##盐湖股份  
   
-    # get_all_price(STOCK)  
+    #get_all_price(STOCK)  
     #get_history_data()
     
     # ts.get_hist_data('600848',ktype='W') 

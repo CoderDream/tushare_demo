@@ -46,5 +46,5 @@ def parse(STOCK):
     print "rate: %.2f" % rate
 
 if __name__ == '__main__':
-    STOCK = '600000'    ##浦发银行
+    STOCK = '600000'
     parse(STOCK)
