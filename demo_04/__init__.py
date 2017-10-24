@@ -1,7 +1,7 @@
 
 # stock_terminal
 # Stock
-#https://github.com/felixglow/Stock
+# https://github.com/felixglow/Stock
 # 
 # 终端实时获取股票价格
 # 
@@ -46,7 +46,7 @@ import time
 import sys
 import threading
 import queue
-#from Queue import queue
+# from Queue import queue
 
 from optparse import OptionParser
 
@@ -127,9 +127,9 @@ if __name__ == '__main__':
     options, args = parser.parse_args(args=sys.argv[1:])
 
     assert options.codes, "Please enter the stock code!"  # 是否输入股票代码
-    #Python2
-    #if filter(lambda s: s[:-6] not in ('sh', 'sz', 's_sh', 's_sz'), options.codes.split(',')):  # 股票代码输入是否正确
-    #Python3
+    # Python2
+    # if filter(lambda s: s[:-6] not in ('sh', 'sz', 's_sh', 's_sz'), options.codes.split(',')):  # 股票代码输入是否正确
+    # Python3
     stock_array = options.codes.split(',')
     print('stock_array    ', stock_array)
     bad_stock_list = list(filter(lambda s: s[:-6] not in ('sh', 'sz', 's_sh', 's_sz'), stock_array))
